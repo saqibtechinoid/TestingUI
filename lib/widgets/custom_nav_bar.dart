@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Enum to manage the active tab state
-enum NavTab { home, schedule,add, chat, profile }
+enum NavTab { home, schedule, add, chat, profile }
 
 class CustomNavBar extends StatelessWidget {
   final NavTab currentTab;
@@ -84,7 +83,7 @@ class CustomNavBar extends StatelessWidget {
             activeColor: primaryTeal,
             inactiveColor: inactiveGrey,
           ),
-          const Spacer(), 
+          const Spacer(),
           _buildNavItem(
             icon: Icons.chat_bubble_outline,
             label: 'Chat',

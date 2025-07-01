@@ -56,8 +56,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     CustomText(
-                                      // top: screenHeight * 0.081,
-                                      // left: screenWidth * 0.17,
                                       text: "Welcome, Adam",
                                       size: 22,
                                       fontWeight: FontWeight.w600,
@@ -65,8 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                       wordSpacing: -3.0,
                                     ),
                                     CustomText(
-                                      // top: screenHeight * 0.111,
-                                      // left: screenWidth * 0.17,
                                       text: "Welcome to Care Solution",
                                       size: 16,
                                       fontWeight: FontWeight.w300,
@@ -92,7 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           ],
                         ),
 
-                        // SizedBox(height: 20),
                         CustomContainer(
                           height: 80,
                           width: double.infinity,
@@ -106,7 +101,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                // Wrap the Row containing the icon and text with Expanded
                                 Expanded(
                                   child: Row(
                                     children: [
@@ -116,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         size: 35,
                                       ),
                                       SizedBox(width: 5),
-                                      // Wrap the Column with Expanded to allow text to take available space
+
                                       Expanded(
                                         child: Column(
                                           mainAxisAlignment:
@@ -136,8 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 16,
                                               fontWeight: FontWeight.w400,
                                               color: Colors.black,
-                                              maxLines:
-                                                  2, // Set a maxLines for fading effect
+                                              maxLines: 2,
                                             ),
                                           ],
                                         ),
@@ -259,7 +252,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.black,
                           ),
                         ),
-                        // SizedBox(width: 25),
+
                         Text(
                           "View all",
                           style: TextStyle(

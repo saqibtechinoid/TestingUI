@@ -14,7 +14,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  NavTab _currentTab = NavTab.home; 
+  NavTab _currentTab = NavTab.home;
 
   final List<Widget> _pages = [
     MyHomePage(),
@@ -55,7 +55,7 @@ class _MainScreenState extends State<MainScreen> {
           height: 100.0,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: Colors.white, width: 6.0), // Outer border
+            border: Border.all(color: Colors.white, width: 6.0),
           ),
           child: Container(
             width: 80.0,
