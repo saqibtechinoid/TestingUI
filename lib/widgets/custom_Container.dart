@@ -32,7 +32,6 @@
 //   }
 // }
 
-
 import 'package:flutter/material.dart';
 
 // Assuming CustomContainer and CustomText are in separate files as provided
@@ -69,4 +68,3 @@ class CustomContainer extends StatelessWidget {
     );
   }
 }
-

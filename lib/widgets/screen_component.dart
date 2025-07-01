@@ -24,42 +24,44 @@ class ScreenComponent extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10),
-      child: CustomContainer(
-        // width: 190,
-        height: 90,
-        color: backgroundcolor,
+    return CustomContainer(
+      height: 87,
+      // width: 180,
+      color: backgroundcolor,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
         child: Row(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 15),
+              padding: const EdgeInsets.only(left: 2),
               child: IconContainer(
-                height: 45,
-                width: 45,
+                height: 40,
+                width: 40,
                 color: textColor,
                 borderRadius: 30.0,
                 child: Icon(icon, color: iconColor, size: iconSize),
               ),
             ),
             SizedBox(width: 10),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CustomText(
-                  text: mainText,
-                  size: 22,
-                  fontWeight: FontWeight.w600,
-                  color: textColor,
-                ),
-                CustomText(
-                  text: subText,
-                  size: 12,
-                  fontWeight: FontWeight.w400,
-                  color: textColor,
-                ),
-              ],
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomText(
+                    text: mainText,
+                    size: 24,
+                    fontWeight: FontWeight.w600,
+                    color: textColor,
+                  ),
+                  CustomText(
+                    text: subText,
+                    size: 12,
+                    fontWeight: FontWeight.w400,
+                    color: textColor,
+                  ),
+                ],
+              ),
             ),
           ],
         ),

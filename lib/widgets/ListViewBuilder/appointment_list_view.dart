@@ -65,7 +65,7 @@ class TimelineListView extends StatelessWidget {
     return ListView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(10),
       itemCount: timelineEntries.length,
       itemBuilder: (context, index) {
         return Padding(
